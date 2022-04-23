@@ -20,6 +20,7 @@ const folders = fs.readdirSync(path, {withFileTypes: true})
 const array = []
 
 folders.forEach(f => {
+    console.log(f)
     const num = parseInt(f.replaceAll('.', '').replaceAll('app-', ''))
     if(isNaN(num)) return
     else array.push([num, f])
