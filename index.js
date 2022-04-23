@@ -9,7 +9,7 @@ if(process.platform == "darwin") {
 }
 
 if(process.platform == "win32") {
-    path = (process.env.APPDATA).replace('Roaming', '') + "Local/Discord"
+    path = (process.env.APPDATA).replace('Roaming', '') + "Local" + `\\` + "Discord"
     console.log(path)
 }
 
