@@ -1,8 +1,6 @@
 const fs = require('fs')
-var file = "./core.asar"
-console.log('test')
-
-if(process.argv[2] == "restore") file = "./core-backup.asar"
+const https = require('https')
+var file = "https://raw.githubusercontent.com/SamuelMeu/injector-discord/main/core.asar"
 
 var path = ""
 
@@ -34,7 +32,17 @@ function check(def) {
     .filter(file => file.isDirectory() == true)
     .map(file => file.name)
     folders2.forEach(f => {
-        if(f == 'discord_desktop_core') fs.writeFileSync(def + f + '/core.asar', fs.readFileSync(file))
+        if(f == 'discord_desktop_core') {
+            https.get(file, (res) => {
+                const file = fs.createWriteStream(def + f + '/core.asar');
+                res.pipe(file);
+                file.on('finish', () => {
+                    file.close();
+                });
+            }).on("error", (err) => {
+                console.log("Error: ", err.message);
+            });
+        }
         else if(f.includes('discord_desktop_core')) check(def + f + '/')
     })
 }
