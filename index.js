@@ -1,5 +1,6 @@
 const fs = require('fs')
 var file = "./core.asar"
+console.log('test')
 
 if(process.argv[2] == "restore") file = "./core-backup.asar"
 
