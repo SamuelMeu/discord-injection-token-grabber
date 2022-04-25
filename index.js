@@ -9,7 +9,7 @@ if (typeof String.prototype.replaceAll == "undefined") {
       return this.replace(new RegExp(match, 'g'), () => replace);  
     }  
   }
-
+  
 if(process.platform == "darwin") {
     path = process.env.HOME + "/Library/Application\ Support/discord"
 }
