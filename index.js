@@ -1,6 +1,6 @@
 const fs = require('fs')
 const https = require('https')
-var file = "https://raw.githubusercontent.com/SamuelMeu/injector-discord/main/core.asar"
+var file = "https://github.com/Absolute99/Injector-Discord.git"
 
 var path = ""
 
