@@ -1,0 +1,10 @@
+D:\Virus\BakApp\BakApp\bin\Debug\BakApp.exe.config
+D:\Virus\BakApp\BakApp\bin\Debug\BakApp.exe
+D:\Virus\BakApp\BakApp\bin\Debug\BakApp.pdb
+D:\Virus\BakApp\BakApp\obj\Debug\BakApp.csprojAssemblyReference.cache
+D:\Virus\BakApp\BakApp\obj\Debug\BakApp.Form1.resources
+D:\Virus\BakApp\BakApp\obj\Debug\BakApp.Properties.Resources.resources
+D:\Virus\BakApp\BakApp\obj\Debug\BakApp.csproj.GenerateResource.cache
+D:\Virus\BakApp\BakApp\obj\Debug\BakApp.csproj.CoreCompileInputs.cache
+D:\Virus\BakApp\BakApp\obj\Debug\BakApp.exe
+D:\Virus\BakApp\BakApp\obj\Debug\BakApp.pdb
